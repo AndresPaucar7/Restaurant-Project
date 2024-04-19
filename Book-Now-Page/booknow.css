@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+body {
+    background-color: black;
+}
+
+header {
+    height: 10px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-style: inset;
+    border-width: 2px;
+    box-shadow: inset 0px 0px 40px 40px #b48d37;
+    border-color: rgb(226, 218, 218);
+    background-color: grey;
+}
+
+.uber-eats,
+.logo {
+    width: 80px;
+}
+
+.a {
+    display: inline;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    width: 25px;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(21, 20, 20);
+    height: 2.5px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info,
+.days,
+.time {
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+.book-now {
+    margin-top: 20px;
+    padding: .7em;
+    width: 130px;
+}
+
+.month {
+    padding: 30px 20px;
+    width: 530px;
+    border-color: #b48d37;
+    color: #b48d37;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.month li {
+    list-style: none;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border-color: #b48d37;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #b48d37;
+    text-align: center;
+}
+
+.days {
+    border-color: #b48d37;
+    padding: 35px 5px;
+}
+
+.days li {
+    font-size: 15px;
+    color: #b48d37;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.days li::after {
+    content: "";
+    position: absolute;
+    background-color: #b48d37;
+    height: 2.3px;
+    width: 0%;
+    left: 28px;
+    bottom: -2px;
+    transition: .4s;
+}
+
+.days li:hover:after {
+    width: 30%;
+}
+
+.info {
+    padding: .85em;
+    border-style: none;
+    margin-left: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: none;
+    color: black;
+    border-width: 3px;
+    border-color: #b48d37;
+    background-color: rgba(128, 128, 128, 0.975);
+    opacity: .7;
+}
